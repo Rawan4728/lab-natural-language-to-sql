@@ -1,0 +1,29 @@
+Prompt Styles:
+
+Prompt Without Shots (Zero-Shot Prompting)
+
+Prompt With Shots (OpenAI Style)
+
+Prompt With Shots in Sample Section Style
+
+
+Zero-Shot: Prompting works well for simple or well-understood queries but struggles with accuracy in more complex cases.
+Without any guidance, GPT is prone to generating incomplete or incorrect SQL queries.
+
+OpenAI Style (With Shots): provides a strong improvement in accuracy by using examples,
+but it can lead to overfitting, especially for more unique or nuanced questions.
+It's effective for standard queries but less adaptable for novel scenarios.
+
+Sample Section Style: strikes a balance between structure and flexibility. 
+It provides clear examples without constraining GPT too much, making it highly effective for both standard and more complex queries.
+This method is particularly suitable for educational environments and real-world use where adaptability is important.
+
+
+
+- Prompts with shots drastically reduce the chance of SQL mistakes or hallucinated table names.
+
+- When using Spanish questions (or non-English languages), the shots-based prompts still work well as long as the examples remain in English — GPT understands the switch.
+
+- The Sample Section style is great for educational contexts, while OpenAI-style shots are more natural for chat-like systems.
+
+- Always testing with a question in another language (Spanish in this case) confirmed the importance of samples for guiding structure rather than language.
